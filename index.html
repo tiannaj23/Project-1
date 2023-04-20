@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Wellness app project</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+    <center>
+
+      <div id="welcome">
+        <div class ="quote-element"></div>
+      
+        <div>
+          <h1 class="title $family-secondary">WELCOME TO YOUR WELLNESS CHECK-UP!</h1>
+            <p class="subtitle">Let's get started</p>
+      </div>
+
+      </div>
+    
+
+      <button class="button is-primary" id="NEXT">NEXT</button>
+
+      <div id="questions" class="hide"></div> 
+      <div id= "answers" class="hide"></div>
+      <div id="choices" class="hide"></div>
+
+    <div class="subtitle">Overall how are you feeling?
+
+      <button class="Tired" onclick="window.location.href = 'https://www.bing.com/ck/a?!&&p=ffe024fb7bdbf998JmltdHM9MTY3NjI0NjQwMCZpZ3VpZD0xNDM1NDAzOC1mY2QwLTYwNGYtMWY2ZC01MTBkZmRmYzYxNWMmaW5zaWQ9NTQ3MA&ptn=3&hsh=3&fclid=14354038-fcd0-604f-1f6d-510dfdfc615c&psq=here+how+to+deal+with+tiredness&u=a1aHR0cHM6Ly93d3cuaGVhbHRobGluZS5jb20vaGVhbHRoL2hvdy10by1zdG9wLWZlZWxpbmctdGlyZWQjOn46dGV4dD0xNSUyMFdheXMlMjB0byUyMENvbWJhdCUyMFRpcmVkbmVzcyUyMDElMjAxLiUyMEVhdCwuLi4lMjA4JTIwOC4lMjBSZWR1Y2UlMjBzdHJlc3MlMjAuLi4lMjBNb3JlJTIwaXRlbXM&ntb=1';">Tired</button>
+    
+      <button class="Lonely"onclick="window.location.href = 'https://www.bing.com/ck/a?!&&p=eaaefb3566441550JmltdHM9MTY3NjI0NjQwMCZpZ3VpZD0xNDM1NDAzOC1mY2QwLTYwNGYtMWY2ZC01MTBkZmRmYzYxNWMmaW5zaWQ9NTQ0OA&ptn=3&hsh=3&fclid=14354038-fcd0-604f-1f6d-510dfdfc615c&psq=here+how+to+deal+with+loneliness&u=a1aHR0cHM6Ly93d3cud2VibWQuY29tL21lbnRhbC1oZWFsdGgvZmVhdHVyZXMvYmVhdC1sb25lbGluZXNzIzp-OnRleHQ9MTIlMjBXYXlzJTIwdG8lMjBCZWF0JTIwTG9uZWxpbmVzcyUyMDElMjBCZSUyMGtpbmQsLi4uJTIwOCUyMEZpbmQlMjB5b3VyJTIwd2h5JTIwLi4uJTIwTW9yZSUyMGl0ZW1z&ntb=1';">Lonely</button>
+
+      <button class="Anxious"onclick="window.location.href = 'https://www.bing.com/ck/a?!&&p=975397acb7fc3d9aJmltdHM9MTY3NjI0NjQwMCZpZ3VpZD0xNDM1NDAzOC1mY2QwLTYwNGYtMWY2ZC01MTBkZmRmYzYxNWMmaW5zaWQ9NTQ5NQ&ptn=3&hsh=3&fclid=14354038-fcd0-604f-1f6d-510dfdfc615c&psq=here+how+to+deal+with+anxiety&u=a1aHR0cHM6Ly93d3cuaGVhbHRobGluZS5jb20vaGVhbHRoL21lbnRhbC1oZWFsdGgvaG93LXRvLWNvcGUtd2l0aC1hbnhpZXR5Izp-OnRleHQ9OCUyMGxvbmctdGVybSUyMHN0cmF0ZWdpZXMlMjBmb3IlMjBjb3BpbmclMjB3aXRoJTIwYW54aWV0eSUyMDEsLi4uJTIwOCUyMDguJTIwQXNrJTIweW91ciUyMGRvY3RvciUyMGFib3V0JTIwbWVkaWNhdGlvbnM&ntb=1';">Anxious</button>
+    
+      <button class="Stressed"onclick="window.location.href = 'https://www.health.harvard.edu/mind-and-mood/best-ways-to-manage-stress';">Stressed</button>
+
+      <button class="Frustrated"onclick="window.location.href = 'https://www.bing.com/ck/a?!&&p=659380f4e8098901JmltdHM9MTY3NjI0NjQwMCZpZ3VpZD0xNDM1NDAzOC1mY2QwLTYwNGYtMWY2ZC01MTBkZmRmYzYxNWMmaW5zaWQ9NTQ1MQ&ptn=3&hsh=3&fclid=14354038-fcd0-604f-1f6d-510dfdfc615c&psq=here+how+to+deal+with+frustration&u=a1aHR0cHM6Ly93d3cuYWNvbnNjaW91c3JldGhpbmsuY29tLzEzNTM3L2hvdy10by1kZWFsLXdpdGgtZnJ1c3RyYXRpb24vIzp-OnRleHQ9MTQlMjBXYXlzJTIwVG8lMjBEZWFsJTIwV2l0aCUyMEZydXN0cmF0aW9uJTIwMSUyMDEuLDglMjA4LiUyME1hbmFnZSUyMHlvdXIlMjBleHBlY3RhdGlvbnMuJTIwLi4uJTIwTW9yZSUyMGl0ZW1z&ntb=1';">Frustrated</button>
+
+      <button class="Optimistic" onclick="window.location.href = 'https://www.bing.com/ck/a?!&&p=75602eb178b983b2JmltdHM9MTY3NjI0NjQwMCZpZ3VpZD0xNDM1NDAzOC1mY2QwLTYwNGYtMWY2ZC01MTBkZmRmYzYxNWMmaW5zaWQ9NTQ3MA&ptn=3&hsh=3&fclid=14354038-fcd0-604f-1f6d-510dfdfc615c&psq=here+how+to+deal+with+Optimistic&u=a1aHR0cHM6Ly93d3cudmVyeXdlbGxtaW5kLmNvbS90aGUtYmVuZWZpdHMtb2Ytb3B0aW1pc20tMzE0NDgxMQ&ntb=1';">Optimistic</button>
+
+    </div>
+    </center>
+
+       <script src="./assets/js/script.js"></script>
+  </body>
+</html>
