@@ -31,4 +31,4 @@ When I click on the appropriate mood, then I am redirected to a link to help me 
 
 ## Mock-Up: 
 
-![screen shot](./images/Screenshot%202023-02-15%20at%205.56.44%20PM%20Large.jpeg)
+![screen shot](./images/Project1.jpeg)
