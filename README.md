@@ -28,4 +28,7 @@ When I click on the appropriate mood, then I am redirected to a link to help me 
 ### GitHub: https://github.com/tiannaj23
 ### GitHub: https://github.com/SomayyahMaqsudi
 ### GitHub: https://github.com/aeffoua
-## Mock-Up: ![Photo](./images/deployed-site.webm)
+
+## Mock-Up: 
+
+![screen shot](./images/Screenshot%202023-02-15%20at%205.56.44%20PM%20Large.jpeg)
